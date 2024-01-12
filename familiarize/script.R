@@ -18,7 +18,8 @@ cat(result, "\n")
 
 
 ##### b
-cat(help(max))
+help_max <- help(max)
+cat(help_max)
 
 
 
@@ -53,3 +54,11 @@ if (exists("a")) {
 # Load the variable 'a' from the file
 load("variable_a.Rdata")
 cat("Loaded variable 'a':", a, "\n")
+
+#### f
+# Install and load the 'gridExtra' package
+install.packages("gridExtra")
+library(gridExtra)
+
+# Find a function for visualizing data tables
+?grid.table
