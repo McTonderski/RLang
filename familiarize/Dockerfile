@@ -5,7 +5,7 @@ FROM rocker/r-ver
 RUN mkdir /home/r-environment
 
 # Install R dependencies
-RUN R -e "install.packages(c('gridExtra'))"
+RUN R -e "install.packages(c('gridExtra', 'ggplot2'))"
 
 # Copy our R script to the container
 COPY script.R /home/r-environment/script.R
